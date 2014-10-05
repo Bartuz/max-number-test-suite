@@ -15,15 +15,15 @@ describe Array do
     end
 
     context 'when the first number is maximum' do
-      subject(:array) { [3, 1, 2] }
+      subject { [3, 1, 2] }
 
       it 'returns maximum number' do
-        expect(array.maximum_if_implementation).to eq(3)
+        its(:maximum_if_implementation) { is_expected.to eq(3) }
       end
     end
 
     context 'when the middle number is maximum' do
-      subject(:array) { [1, 3, 2] }
+      subject { [1, 3, 2] }
 
       it 'returns maximum number' do
         expect(array.maximum_if_implementation).to eq(3)
@@ -31,7 +31,7 @@ describe Array do
     end
 
     context 'when the last number is maximum' do
-      subject(:array) { [1, 2, 3] }
+      subject { [1, 2, 3] }
 
       it 'returns maximum number' do
         expect(array.maximum_if_implementation).to eq(3)
