@@ -1,8 +1,8 @@
 class Array
 
-  def maximum_number_algorithm_1
-    if self.size > 3
-      raise "Unsupported elements count"
+  def maximum_if_implementation
+    if size != 3
+      raise "Unsupported number of elements"
     else
       a, b, c = self[0], self[1], self[2]
       if a >= b
