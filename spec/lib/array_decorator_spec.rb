@@ -1,6 +1,6 @@
 describe Array do
   describe '#maximum_if_implementation' do
-    it_implements 'maximum_number_algorithm', 'maximum_if_implementation'
+    it_implements 'maximum number algorithm', 'maximum_if_implementation'
 
     context 'when unsupported number of elements is given' do
       subject(:too_small_array) { [1] }
@@ -14,7 +14,7 @@ describe Array do
   end
 
   describe '#maximum_while_implementation' do
-    it_implements 'maximum_number_algorithm', 'maximum_while_implementation'
+    it_implements 'maximum number algorithm', 'maximum_while_implementation'
 
     context 'when unsupported number of elements is given' do
       subject(:no_elements_array) { [] }

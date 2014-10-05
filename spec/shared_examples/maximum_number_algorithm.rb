@@ -1,4 +1,4 @@
-shared_examples "maximum_number_algorithm" do |method_name|
+shared_examples "maximum number algorithm" do |method_name|
 
   context 'with supported number of elements' do
     subject(:array) { [1, 2, 3] }
