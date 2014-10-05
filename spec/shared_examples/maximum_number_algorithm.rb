@@ -1,15 +1,15 @@
 shared_examples "maximum_number_algorithm" do |method_name|
 
-  context 'when supported number of elements is given' do
+  context 'with supported number of elements' do
     subject(:array) { [1, 2, 3] }
 
     it 'does not raise an error' do
       expect { array.send(method_name) }.not_to raise_error
     end
 
-    context 'when all elements are different' do
+    context 'with all elements different' do
 
-      context 'when the first number is maximum' do
+      context 'with maximum number at the begining' do
         subject(:array) { [3, 1, 2] }
         let(:expected_maximum) { 3 }
 
@@ -18,7 +18,7 @@ shared_examples "maximum_number_algorithm" do |method_name|
         end
       end
 
-      context 'when the middle number is maximum' do
+      context 'with maximum number in the middle' do
         subject(:array) { [1, 3, 2] }
         let(:expected_maximum) { 3 }
 
@@ -27,7 +27,7 @@ shared_examples "maximum_number_algorithm" do |method_name|
         end
       end
 
-      context 'when the last number is maximum' do
+      context 'with maximum number in the end' do
         subject(:array) { [1, 2, 3] }
         let(:expected_maximum) { 3 }
 
@@ -38,7 +38,7 @@ shared_examples "maximum_number_algorithm" do |method_name|
     end
   end
 
-  context 'when are elements are the same' do
+  context 'with all the same elements' do
     subject(:array) { [1, 1, 1] }
     let(:expected_maximum) { 1 }
 
@@ -51,7 +51,7 @@ shared_examples "maximum_number_algorithm" do |method_name|
     end
   end
 
-  context 'when two elements are the same' do
+  context 'with two the same elements' do
     subject(:array) { [1, 1, 2] }
     let(:expected_maximum) { 2 }
 
