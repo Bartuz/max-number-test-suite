@@ -8,7 +8,7 @@ RSpec `doc` output:
 ```
 Array
   #maximum_if_implementation
-    it implements: maximum_number_algorithm
+    it has implementation of maximum number algorithm
       with supported number of elements
         does not raise an error
         with all elements different
@@ -27,7 +27,7 @@ Array
     when unsupported number of elements is given
       raises an error
   #maximum_while_implementation
-    it implements: maximum_number_algorithm
+    it has implementation of maximum number algorithm
       with supported number of elements
         does not raise an error
         with all elements different
